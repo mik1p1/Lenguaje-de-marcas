@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel ATA Lion House</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="header-text">StayHaven Hotels</a>
+    </div>
+    <div class="container-root-reserva">
+        <div class="container">
+            <h1 class="h1-titulo">Haga su reserva</h1>
+
+            <form action="procesareserva.php" method="GET">
+               
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="100" required autofocus><br><br>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="100" required><br><br>
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" maxlength="10" placeholder="DNI con letra" required><br>
+                </fieldset><br>
+
+               
+                <fieldset>
+                    <legend>Datos de su estancia</legend>
+                    <label>Habitación:</label><br>
+                    <input type="radio" id="individual" name="habitacion" value="Individual" required>
+                    <label for="individual">Individual</label><br>
+                    <input type="radio" id="doble" name="habitacion" value="Doble">
+                    <label for="doble">Doble</label><br>
+                    <input type="radio" id="triple" name="habitacion" value="Triple">
+                    <label for="triple">Triple</label><br><br>
+
+                    <label for="personas">Número de personas:</label>
+                    <select id="personas" name="personas" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select><br><br>
+
+                    <input type="checkbox" id="mascotas" name="mascotas">
+                    <label for="mascotas">Llevo mascotas</label><br><br>
+
+                    <label for="fecha">Fecha de llegada:</label>
+                    <input type="date" id="fecha" name="fecha" required><br><br>
+
+                    <label for="hora">Hora de llegada:</label>
+                    <input type="time" id="hora" name="hora" required><br>
+                </fieldset><br>
+
+                
+                <button type="submit" class="boton-reserva">Enviar</button>
+                <button type="reset" class="boton-reserva">Reiniciar</button>
+            </form><br>
+
+            <a href="index.html" class="links">Volver</a>
+        </div>
+    </div>
+</body>
