@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel ATA Lion House</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        .link-ej1 {
+            text-decoration: none;
+            font-size: 2rem;
+            transition: 0.2s;
+            color: rgb(218, 218, 218);
+            background-color: blueviolet;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+
+
+        .link-ej1:hover {
+            font-size: 2.2rem;
+            transition: 0.15s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(184, 161, 206);
+        }
+
+        .link-ej1::after {
+            content: 'Esto es un link, pasa el ratón por encima';
+        }
+
+        .link-ej1:active::after {
+            content: 'Estás pulsando el botón';
+            transition: 0.2s;
+        }
+
+        .link-ej2 {
+
+            font-size: 2rem;
+            transition: 0.2s;
+            color: rgb(218, 218, 218);
+            background-color: blueviolet;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+
+
+        .link-ej2:hover {
+            font-size: 2.2rem;
+            transition: 0.2s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(184, 161, 206);
+        }
+
+        .link-ej2:visited {
+            background-color: gray;
+            color: rgba(167, 167, 167, 0.223);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index2.html" class="header-text">Página 1 de los tutoriales</a>
+    </div>
+    <div
+        style="margin-top: 40px; display: flex; width: 97.9vw; justify-content: center; align-items: center; flex-direction: column;">
+        <a href="https://www.iesjuanbosco.es/" class="link-ej1"></a>
+        <a href="https://www.iesjuanbosco.es/" class="link-ej2" style="margin-top: 50px;">Esto es otro link, con
+            text-decoration en default y con :visited, púlsame</a>
+    </div>
+</body>
