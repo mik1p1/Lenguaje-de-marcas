@@ -1,68 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel ATA Lion House</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>Document</title>
+
+    <style>
+        .button-48 {
+            appearance: none;
+            background-color: #FFFFFF;
+            border-width: 0;
+            box-sizing: border-box;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Clarkson, Helvetica, sans-serif;
+            font-size: 45px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 1em;
+            margin: 0;
+            opacity: 1;
+            outline: 0;
+            padding: 1.5em 2.2em;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-rendering: geometricprecision;
+            text-transform: uppercase;
+            transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .button-48:before {
+            animation: opacityFallbackOut .5s step-end forwards;
+            backface-visibility: hidden;
+            background-color: #EBEBEB;
+            clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: translateZ(0);
+            transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+            width: 100%;
+        }
+
+        .button-48:hover:before {
+            animation: opacityFallbackIn 0s step-start forwards;
+            clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+        }
+
+        .button-48:after {
+            background-color: #FFFFFF;
+        }
+
+        .button-48 span {
+            z-index: 1;
+            position: relative;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="header">
-        <a href="index.html" class="header-text">StayHaven Hotels</a>
+<body style="background-color: rgb(231, 230, 230); margin: 0%;">
+    <div
+        style="height: 15vh; width: 100%; font-family: Clarkson, Helvetica, sans-serif; font-size: 45px; font-weight: 500; letter-spacing: 0; line-height: 1em; text-align: center;">
+        <p>Luis Miguel Pascua Portilla, curso 2024-2025 Lenguaje de Marcas</p>
     </div>
-    <div class="container-root">
-        <div class="container">
-            <h1 class="h1-titulo">Hotel ATA Lion House</h1>
-            <h2>Ubicado en pleno centro de Kyoto</h2>
-            <img src="Hotel.jpg" style="width: 500px; height: 300px;">
-            <p>Este precioso ryokan japonés en su máximo estilo tradicional está situado en el<br>centro de esta hermosa
-                ciudad. Cuenta con 4 futones para 4 personas, baños propios y <br> una espaciosa salá de té en la que
-                podrás
-                ser servido por geishas.<br><br> Nuestro servicio también incluye:</p>
-            <ul>- Un jardín compartido</ul>
-            <ul>- Un Onsen, frecuentado por locales</ul>
-            <ul>- Comedor local con cinta transportadora de sushi</ul>
-            <ul>- Kimonos para cada huésped, por tamaños</ul>
-
-            <p>Si aún no estás convencido, tenemos una lista extensa de lugares tradicionales japoneses <br>
-                que podrían gustarte. Visitanos en <a href="turismorural.com" class="links">turismorural.com</a>
-            </p>
-
-            <h3>Lista de precios</h3>
-            <table border="1" style="margin-left: 8rem;">
-                <thead>
-                    <tr>
-                        <th>Habitación</th>
-                        <th>Temporada baja</th>
-                        <th>Temporada alta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <td>individual</td>
-                    <td>40</td>
-                    <td>60</td>
-                </tbody>
-                <tbody>
-                    <td>doble</td>
-                    <td>50</td>
-                    <td>70</td>
-                </tbody>
-                <tbody>
-                    <td>triple</td>
-                    <td>60</td>
-                    <td>80</td>
-                </tbody>
-            </table>
-            <p>Puedes hacer tu <a href="reserva.html" class="links">reserva</a> en tan solo un par de minutos pinchando
-                en el enlace. <br>
-                en caso de no ser redireccionado, pinche aquí: <br> </p>
-
-            <a href="reserva.html" class="boton-reserva" style="text-decoration: none;">Hacer reserva</a>
-            <a href="menuportfolio.html" class="boton-css2" style="text-decoration: none;">Portfolio</a>
-        </div>
+    <div style="display: flex; flex-direction: column; justify-content: space-around; height: 99vh">
+        <a href="#">
+            <button class="button-48" role="button"><span class="text">Tarea 1.B.2(wip)</span></button>
+        </a>
+        <a href="menuhotel.html">
+            <button class="button-48" role="button"><span class="text">Tarea 1.B.3 </span></button>
+        </a>
+        <a href="index2.html">
+            <button class="button-48" role="button"><span class="text">Tarea 2.B.2</span></button>
+        </a>
+        <a href="index3.html">
+            <button class="button-48" role="button"><span class="text">Tarea 2.B.3</span></button>
+        </a>
     </div>
 </body>
+
+</html>
