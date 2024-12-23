@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tarea2/style3.css">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(/tarea2/fondo.jpg);">
+
+
+    <button type="button" class="boton-volver" style="position: fixed;"><a href="/tarea2/index3.html"
+            style="text-decoration: none; color: rgb(255, 255, 255);">Volver atrás</a></button>
+
+    <div class="formulario-container">
+        <form action="formulario.php" method="post" class="formulario">
+            <fieldset class="fieldset">
+                <legend class="legend">Sus Datos</legend>
+                <p>
+                    <label for="nom" class="label">Nombre y apellidos:</label>
+                    <input type="text" maxlength="50" name="nombre" id="nom" placeholder="Escribe aqui..." autofocus
+                        required class="input">
+                </p>
+                <p>
+                    <label for="pass" class="label">Contraseña:</label>
+                    <input type="password" minlength="4" maxlength="8" name="contraseña" id="pass" required
+                        class="input">
+                </p>
+                <p>
+                    <label for="user" class="label">Usuario:</label>
+                    <input type="text" value="anónimo" disabled class="input">
+                </p>
+                <legend class="legend">Nivel:</legend>
+                <p>
+                    <input type="radio" value="profesional" name="nivel" id="prof" class="radio">
+                    <label for="prof" class="label">Profesional</label>
+                </p>
+                <p>
+                    <input type="radio" value="avanzado" name="nivel" id="avan" checked class="radio">
+                    <label for="avan" class="label">Avanzado</label>
+                </p>
+                <p>
+                    <input type="radio" value="principiante" name="nivel" id="princ" class="radio">
+                    <label for="princ" class="label">Principiante</label>
+                </p>
+            </fieldset>
+            <p>
+                <label for="pais" class="label">pais:</label>
+                <select name="pais" id="pais" class="select">
+                    <option value="esp" selected>España</option>
+                    <option value="irl">Irlanda</option>
+                    <option value="fra">Francia</option>
+                    <option value="jpn">Japón</option>
+                    <option value="ita">Italia</option>
+                    <option value="ch">China</option>
+                    <option value="ale">Alemania</option>
+                    <option value="kor">Corea del Sur</option>
+                    <option value="por">Portugal</option>
+                    <option value="ind">India</option>  
+                </select>
+            </p>
+            <p>
+                <label for="desc" class="label">Descripción:</label>
+                <textarea name="desc" id="desc" placeholder="Escribe aquí..." cols="30" rows="5"
+                    class="textarea"></textarea>
+            </p>
+            <fieldset class="fieldset">
+            <p>
+                <input type="checkbox" name="promociones" id="promo" checked class="checkbox">
+                <label for="promo" class="label">Deseo recibir información sobre novedades y ofertas</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiciones" id="cond" required class="checkbox">
+                <label for="cond" class="label">Declaro haber leído y aceptar las condiciones generales del programa y
+                    la normativa sobre protección de datos</label>
+            </p>
+            <p>
+                <label for="foto" class="label" style="color: rgb(5, 218, 5);">Adjuntar una foto:</label>
+                <input type="file" name="foto" id="foto" class="input">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="boton-enviar">
+                <input type="reset" value="Borrar datos" class="boton-reset">
+            </p>
+        </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
