@@ -1,5 +1,5 @@
 body {
-    background-image: url('/tarea2/plantasfondo.jpg');
+    background-image: url('tarea2/plantasfondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body {
 }
 
 .foto-izq-container {
-    background-image: url('/tarea2/plantas1.jpg');
+    background-image: url('tarea2/plantas1.jpg');
     width: 70vw;
     height: 100%;
     background-size: cover;
@@ -163,7 +163,7 @@ body {
 
 
 .foto-arriba {
-    background-image: url('/tarea2/plantas2.jpg');
+    background-image: url('tarea2/plantas2.jpg');
     background-size: cover;
     background-position: center;
     height: 50%;
@@ -172,13 +172,13 @@ body {
 }
 
 .foto-arriba:hover {
-    background-image: url('/tarea2/plantas3.jpg');
+    background-image: url('tarea2/plantas3.jpg');
     transition: 0.7s;
     cursor: pointer;
 }
 
 .foto-abajo {
-    background-image: url('/tarea2/plantasia.jpg');
+    background-image: url('tarea2/plantasia.jpg');
     background-size: cover;
     background-position: center;
     height: 50%;
@@ -187,7 +187,7 @@ body {
 }
 
 .foto-abajo:hover {
-    background-image: url('/tarea2/plantas4.jpg');
+    background-image: url('tarea2/plantas4.jpg');
     transition: 0.7s;
     cursor: pointer;
 }
